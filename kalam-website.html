@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qalam – headlines, topics and guides for poets and storytellers</title>
+<meta name="description" content="Stuck on what to write? Get headlines, topics, step-by-step writing guides and opening lines for poems, stories, essays and songs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=DM+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#0f1a1c;--card:#172629;--ink:#eef3ee;--muted:#9db2b0;--accent:#f2b45a;--on:#1a1206;--line:rgba(255,255,255,.14);color-scheme:dark}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f6f4;--card:#fff;--ink:#14211f;--muted:#51655f;--accent:#b9650a;--on:#fff;--line:rgba(0,0,0,.15);color-scheme:light}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 var(--body)}
+main{max-width:720px;margin:0 auto;padding:2.2rem 1.2rem 4rem}
+h1,h2{font-family:Fraunces,Georgia,serif;font-weight:600}
+h1{font-size:clamp(3rem,12vw,4.6rem);line-height:1;margin:.2rem 0 .6rem;letter-spacing:-.02em}
+h1::after{content:".";color:var(--accent)}
+h2{font-size:1.5rem;margin:0 0 .8rem}
+.lede{color:var(--muted);margin:0 0 1.6rem;max-width:34em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.3rem}
+label,.lab{display:block;font-weight:500;margin:0 0 .4rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.1rem}
+.chip,.ghost{font:inherit;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:999px;padding:.4rem 1rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on)}
+textarea,input{width:100%;font:inherit;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:14px;padding:.7rem .9rem}
+textarea{resize:vertical;min-height:7rem}
+.go{font:600 1.05rem "DM Sans",system-ui,sans-serif;width:100%;background:var(--accent);color:var(--on);border:0;border-radius:14px;padding:.9rem;cursor:pointer;margin-top:1rem}
+.or{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+.or[hidden]{display:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.err{color:#ff8f8f;margin:.6rem 0 0;min-height:1.4em}
+section{margin-top:2.2rem}
+.hint{color:var(--muted);font-size:.9rem;margin:-.4rem 0 .8rem}
+.item{display:block;width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem;margin-bottom:.6rem;cursor:pointer}
+.item b{display:block;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:500;font-size:1.25rem;line-height:1.35}
+.item span{color:var(--muted);font-size:.95rem}
+ol{margin:0;padding-left:1.4rem}
+ol li{margin-bottom:.7rem;padding-left:.3rem}
+.cmi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem;margin-top:.7rem}
+.cmi p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.cmi small{color:var(--accent)}
+.toast{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:.5rem 1.1rem;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+footer{margin-top:3rem;color:var(--muted);font-size:.9rem}
+.kicker{color:var(--accent);font-weight:500;margin:0;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+select{width:100%;font:inherit;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:14px;padding:.7rem .9rem}
+select option{color:#14211f}
+.row{display:grid;gap:1rem;margin:1.1rem 0}
+@media(min-width:520px){.row{grid-template-columns:1fr 1fr}}
+#titlebox{margin-bottom:1.1rem}
+.piece{margin-top:2rem;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.4rem}
+.piece h2{font-size:1.8rem;margin:0 0 .4rem}
+.piece .body{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:1.15rem;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere}
+.acts{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.3rem}
+html{font-size:var(--fs,16px)}
+:root{--body:"DM Sans",system-ui,sans-serif}
+:root[data-theme="light"]{--bg:#f3f6f4;--card:#fff;--ink:#14211f;--muted:#51655f;--accent:#b9650a;--on:#fff;--line:rgba(0,0,0,.15);color-scheme:light}
+:root[data-theme="dark"]{--bg:#0f1a1c;--card:#172629;--ink:#eef3ee;--muted:#9db2b0;--accent:#f2b45a;--on:#1a1206;--line:rgba(255,255,255,.14);color-scheme:dark}
+a.chip{text-decoration:none;display:inline-block}
+.bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.4rem}
+.bar-actions{display:flex;align-items:center;gap:.6rem}
+.logo{font-family:Fraunces,Georgia,serif;font-size:1.3rem;font-weight:600}
+.primary-action{font:600 1rem "DM Sans",system-ui,sans-serif;background:var(--accent);color:var(--on);border:0;border-radius:999px;padding:.6rem 1.15rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.signup-box{margin:0}
+.signup-form{display:grid;gap:.8rem}
+.signup-form[hidden]{display:none}
+.inline-action{font:inherit;color:var(--accent);background:none;border:0;text-decoration:underline;cursor:pointer;padding:0}
+.signup-fields{display:flex;flex-wrap:wrap;gap:.8rem}
+.signup-fields .field{flex:1 1 220px}
+.signup-box .go{margin-top:0;max-width:180px}
+#signup-status{margin:0;min-height:1.3em}
+#account-panel{animation:drift-in .35s both}
+#account-panel p{overflow-wrap:anywhere}
+#account-edit .or{margin-top:0}
+#account-edit .go{width:auto}
+#account-status{margin:.5rem 0 0;min-height:1.3em}
+.account-dialog{width:min(94vw,560px);max-height:90vh;overflow:auto;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:1.3rem;box-shadow:0 24px 80px rgba(0,0,0,.45)}
+.account-dialog::backdrop{background:rgba(4,12,13,.72);backdrop-filter:blur(4px)}
+.account-dialog[open]{animation:drift-in .25s both}
+.account-dialog-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.2rem}
+.account-dialog-head h2{margin:0}
+.account-close{font-size:1.4rem;line-height:1;padding:.35rem .7rem}
+.ai-write{margin-top:.7rem;border-color:var(--accent)}
+.ai-write:disabled{opacity:.7;cursor:wait}
+#ai-status{margin:.5rem 0 0;min-height:1.3em}
+#panel{margin-bottom:1.6rem;animation:up .25s}
+.chip,.ghost,.go,.item{transition:transform .15s,box-shadow .2s,background .2s,border-color .2s}
+.chip:hover,.ghost:hover,.item:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.2);border-color:var(--accent)}
+.go:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(242,180,90,.35)}
+.chip:active,.ghost:active,.go:active,.item:active{transform:scale(.95)}
+.chip[aria-pressed="true"]{animation:pop .35s}
+@keyframes pop{0%{transform:scale(.88)}60%{transform:scale(1.08)}100%{transform:scale(1)}}
+.go{position:relative;overflow:hidden}
+.go::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 3.5s infinite;pointer-events:none}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+.item{animation:up .4s backwards}
+.cmi{animation:up .35s backwards}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+@keyframes drift-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes title-in{0%{opacity:0;transform:translateY(16px) scale(.96)}70%{transform:translateY(-3px) scale(1.01)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 rgba(242,180,90,0)}50%{box-shadow:0 0 24px rgba(242,180,90,.18)}}
+@keyframes toast-in{0%{opacity:0;transform:translate(-50%,12px) scale(.94)}100%{opacity:1;transform:translate(-50%,0) scale(1)}}
+.bar{animation:up .45s both}
+.kicker{animation:drift-in .55s .08s both}
+h1{animation:title-in .7s .12s both}
+.lede{animation:drift-in .6s .22s both}
+main>.card:not(#panel){animation:drift-in .65s .28s both}
+.signup-box{animation:drift-in .65s .34s both,glow 2.8s 1.2s ease-in-out 2}
+.signup-box:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(242,180,90,.16)}
+input,textarea,select{transition:border-color .2s,box-shadow .2s,transform .2s}
+input:focus,textarea:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(242,180,90,.14)}
+.primary-action:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 6px 18px rgba(242,180,90,.28)}
+.piece{animation:drift-in .5s both}
+#out section{animation:drift-in .5s both}
+#out section:nth-child(2){animation-delay:.08s}
+#out section:nth-child(3){animation-delay:.16s}
+#out section:nth-child(4){animation-delay:.24s}
+.toast.on{animation:toast-in .25s both}
+.cmi b{display:block;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:500;font-size:1.2rem;margin:.2rem 0}
+.cmi .acts{margin-top:.7rem}
+.ghost{font:500 1rem "DM Sans",system-ui,sans-serif;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:999px;padding:.45rem 1.1rem;cursor:pointer}
+#share input{margin-bottom:1.1rem}
+body.noanim *,body.noanim *::before,body.noanim *::after{animation:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<main id="top">
+<div class="bar">
+  <span class="logo">Qalam</span>
+  <div class="bar-actions">
+    <button class="ghost" id="menubtn" type="button" aria-expanded="false" aria-controls="panel" data-i="menu">Menu</button>
+    <button class="primary-action" id="signupbtn" type="button">My account</button>
+  </div>
+</div>
+<div class="card" id="panel" hidden>
+  <span class="lab" data-i="s_lang">Language</span><div class="chips" id="m_lang"></div>
+  <span class="lab" data-i="s_size">Text size</span><div class="chips" id="m_size"></div>
+  <span class="lab" data-i="s_font">Font</span><div class="chips" id="m_font"></div>
+  <span class="lab" data-i="s_theme">Theme</span><div class="chips" id="m_theme"></div>
+  <span class="lab" data-i="s_anim">Animations</span><div class="chips" id="m_anim"></div>
+  <span class="lab" data-i="s_go">Go to</span>
+  <div class="chips"><a class="chip" href="#top" data-i="g_write">Write</a><a class="chip" href="#signup">Sign up</a><a class="chip" href="#share" data-i="g_share">Share writing</a><a class="chip" href="#cm" data-i="g_op">Opinion</a></div>
+</div>
+<header>
+  <p class="kicker" data-i="kicker">For poets and storytellers</p>
+  <h1>Qalam</h1>
+  <p class="lede" data-i="lede">Don’t know what to write, or how to start? Explore headlines and writing guides, or use the Poem &amp; Story Writer to turn your thoughts into a draft.</p>
+</header>
+
+<dialog class="account-dialog" id="signup" aria-labelledby="account-dialog-title">
+  <div class="account-dialog-head">
+    <h2 id="account-dialog-title">My account</h2>
+    <button class="ghost account-close" id="account-close" type="button" aria-label="Close account window">&times;</button>
+  </div>
+  <form class="signup-form" id="signup-form">
+    <p class="hint">Create an account to manage your profile from this site.</p>
+    <div class="signup-fields">
+      <div class="field">
+        <label for="signup-name">Full name</label>
+        <input id="signup-name" type="text" maxlength="80" autocomplete="name" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="signup-email">Email address</label>
+        <input id="signup-email" type="email" maxlength="254" autocomplete="email" placeholder="you@example.com" required>
+      </div>
+    </div>
+    <div class="field">
+      <label for="signup-password">Password</label>
+      <input id="signup-password" type="password" minlength="8" maxlength="128" autocomplete="new-password" placeholder="Create a password (8+ characters)" required>
+    </div>
+    <button class="go" type="submit">Create account</button>
+    <p class="hint">Already registered? <button class="inline-action" id="show-login" type="button">Sign in</button></p>
+    <p class="err" id="signup-status" role="alert"></p>
+  </form>
+  <form class="signup-form" id="login-form" hidden>
+    <p class="hint">Sign in to manage your account.</p>
+    <div class="field">
+      <label for="login-email">Email address</label>
+      <input id="login-email" type="email" maxlength="254" autocomplete="email" required>
+    </div>
+    <div class="field">
+      <label for="login-password">Password</label>
+      <input id="login-password" type="password" maxlength="128" autocomplete="current-password" required>
+    </div>
+    <button class="go" type="submit">Sign in</button>
+    <p class="hint">New here? <button class="inline-action" id="show-signup" type="button">Create an account</button></p>
+    <p class="err" id="login-status" role="alert"></p>
+  </form>
+  <div id="account-panel" hidden>
+    <div id="account-view">
+      <h2>My account</h2>
+      <p class="hint">Your account is stored securely by this site's server.</p>
+      <p><strong>Name:</strong> <span id="account-name"></span></p>
+      <p><strong>Email:</strong> <span id="account-email"></span></p>
+      <button class="ghost" id="account-edit-button" type="button">Edit account</button>
+    </div>
+    <form id="account-edit" class="signup-form" hidden>
+      <h2>Edit account</h2>
+      <div class="field">
+        <label for="account-edit-name">Full name</label>
+        <input id="account-edit-name" type="text" maxlength="80" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="account-edit-email">Email address</label>
+        <input id="account-edit-email" type="email" maxlength="254" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="account-current-password">Current password (required to save)</label>
+        <input id="account-current-password" type="password" maxlength="128" autocomplete="current-password" required>
+      </div>
+      <div class="field">
+        <label for="account-new-password">New password (optional)</label>
+        <input id="account-new-password" type="password" minlength="8" maxlength="128" autocomplete="new-password" placeholder="Leave blank to keep current password">
+      </div>
+      <div class="or">
+        <button class="go" type="submit">Save changes</button>
+        <button class="ghost" id="account-cancel" type="button">Cancel</button>
+      </div>
+    </form>
+    <button class="ghost" id="account-logout" type="button">Sign out</button>
+    <p class="err" id="account-status" role="status" aria-live="polite"></p>
+  </div>
+</dialog>
+
+<div class="card">
+  <span class="lab" id="ml" data-i="ml">What do you need?</span>
+  <div class="chips" id="modes" role="group" aria-labelledby="ml"></div>
+  <span class="lab" id="tl" data-i="tl">What are you writing?</span>
+  <div class="chips" id="types" role="group" aria-labelledby="tl"></div>
+  <div id="titlebox" hidden><label for="ttl">Heading (optional)</label><input id="ttl" maxlength="120" placeholder="For example: Chai on the Balcony"></div>
+  <label for="idea" id="idealab">Your idea or thoughts (a few words are enough)</label>
+  <textarea id="idea" maxlength="300" placeholder="For example: mother waiting for a train, first rain, old friend"></textarea>
+  <div class="row">
+    <div><label for="tone">Tone</label><select id="tone"><option>Any</option><option>Hopeful</option><option>Sad</option><option>Romantic</option><option>Funny</option><option>Calm</option><option>Dark</option></select></div>
+    <div id="lenbox" hidden><label for="len">Length</label><select id="len"><option>Short</option><option selected>Medium</option><option>Long</option></select></div>
+  </div>
+  <button class="go" id="go" type="button">Give me ideas</button>
+  <button class="ghost ai-write" id="ai-write" type="button" hidden>Write poetry from my idea</button>
+  <p class="hint" id="ai-status" role="status" aria-live="polite"></p>
+  <div class="or" id="surprise-wrap"><button class="ghost" id="rnd" type="button">Surprise me with a topic</button></div>
+  <p class="err" id="err" role="alert"></p>
+</div>
+
+<div class="piece" id="piece" hidden>
+  <h2 id="ptitle"></h2>
+  <p class="hint">A starter draft: replace the [brackets] with your own words.</p>
+  <div class="body" id="pbody"></div>
+  <div class="acts"><button class="ghost" id="pcopy" type="button">Copy</button><button class="ghost" id="pagain" type="button">Another draft</button></div>
+</div>
+
+<div id="out" hidden>
+  <section><h2 data-i="h_heads">Headlines</h2><p class="hint">Tap one to copy it.</p><div id="heads"></div></section>
+  <section><h2 data-i="h_topics">Topics and angles</h2><div id="topics"></div></section>
+  <section><h2 id="sh">How to write it</h2><ol id="steps"></ol></section>
+  <section><h2 data-i="h_opens">Ways to begin</h2><p class="hint">Opening lines to spark your own. Tap to copy.</p><div id="opens"></div></section>
+  <button class="ghost" id="more" type="button" style="margin-top:1.5rem">Show different ideas</button>
+</div>
+
+<section id="share">
+  <h2 data-i="h_share">Share your writing</h2>
+  <p class="hint">Post your own poem, story or shayari. Anyone can copy what is shared. Please share only your own work.</p>
+  <div class="chips" id="stypes"></div>
+  <label for="sttl">Title</label><input id="sttl" maxlength="100">
+  <label for="snm">Your name (optional)</label><input id="snm" maxlength="40">
+  <label for="stxt">Your writing</label>
+  <textarea id="stxt" maxlength="3000" style="min-height:9rem" placeholder="Write here, or paste your writing…"></textarea>
+  <div class="or"><button class="go" id="spost" type="button" style="margin-top:1rem" data-i="b_share">Share it</button><button class="ghost" id="spaste" type="button">Paste from clipboard</button></div>
+  <p class="err" id="serr" role="alert"></p>
+  <div id="slist"></div>
+</section>
+
+<section id="cm">
+  <h2 data-i="h_op">Your opinion</h2>
+  <p class="hint">Tell us what you think of Qalam or what helped you write.</p>
+  <label for="cmt">Write a comment</label>
+  <textarea id="cmt" maxlength="600" placeholder="Your opinion…" style="min-height:5rem"></textarea>
+  <button class="go" id="cmgo" type="button" data-i="b_post">Post comment</button>
+  <p class="err" id="cmerr" role="alert"></p>
+  <div id="cmlist"></div>
+</section>
+
+<footer>Qalam is a free writing helper. Ideas are suggestions to spark your own words.</footer>
+</main>
+<div class="toast" id="toast" role="status">Copied</div>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  // Optional: paste a Google Form or Formspree link here so every opinion reaches you.
+  var FEEDBACK_URL="";
+  // Set these values from your EmailJS account to send a welcome email after signup.
+  var EMAILJS_PUBLIC_KEY="";
+  var EMAILJS_SERVICE_ID="";
+  var EMAILJS_TEMPLATE_ID="";
+  try{
+    localStorage.removeItem("kalam_users");
+    localStorage.removeItem("kalam_active_user");
+  }catch(e){}
+
+  function sendWelcomeEmail(name,email){
+    if(!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !window.emailjs){
+      return Promise.resolve(false);
+    }
+    return window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      user_name: name,
+      user_email: email,
+      app_name: "Qalam",
+      login_message: "You are logged in on this app."
+    }).then(function(){return true;}, function(){return false;});
+  }
+  var currentUser=null;
+  function api(path,method,payload){
+    var options={method:method,credentials:"same-origin",headers:{"Content-Type":"application/json"}};
+    if(payload)options.body=JSON.stringify(payload);
+    return fetch(path,options).then(function(response){
+      return response.json().catch(function(){return {}}).then(function(data){
+        if(!response.ok)throw new Error(data.error||"The account service could not complete your request.");
+        return data;
+      });
+    });
+  }
+  function showAccountStatus(message,success){
+    var status=$("account-status");
+    status.textContent=message||"";
+    status.style.color=success?"#7ef0a1":"#ff8f8f";
+  }
+  function renderAccount(user){
+    currentUser=user||null;
+    $("signup-form").hidden=!!currentUser;
+    $("login-form").hidden=!!currentUser;
+    $("account-panel").hidden=!currentUser;
+    $("account-dialog-title").textContent=currentUser?"My account":"Create your account";
+    $("signupbtn").textContent="My account";
+    if(currentUser){
+      $("account-name").textContent=currentUser.name;
+      $("account-email").textContent=currentUser.email;
+      $("account-edit-name").value=currentUser.name;
+      $("account-edit-email").value=currentUser.email;
+    }
+  }
+  $("signup-form").addEventListener("submit",function(event){
+    event.preventDefault();
+    var name=$("signup-name").value.trim();
+    var email=$("signup-email").value.trim();
+    var password=$("signup-password").value;
+    var status=$("signup-status");
+    status.textContent="";
+    var submit=$("signup-form").querySelector("button[type=submit]");
+    submit.disabled=true;
+    api("/api/auth/signup","POST",{name:name,email:email,password:password}).then(function(data){
+      renderAccount(data.user);
+      $("signup-form").reset();
+      showAccountStatus("Account created successfully.",true);
+      toast("Account created");
+      return sendWelcomeEmail(name,email);
+    }).then(function(sent){
+      if(sent)showAccountStatus("Account created. A notification email was sent to "+email+".",true);
+    }).catch(function(error){status.textContent=error.message;}).finally(function(){submit.disabled=false;});
+  });
+  $("login-form").addEventListener("submit",function(event){
+    event.preventDefault();
+    var status=$("login-status");
+    status.textContent="";
+    var submit=$("login-form").querySelector("button[type=submit]");
+    submit.disabled=true;
+    api("/api/auth/login","POST",{email:$("login-email").value.trim(),password:$("login-password").value}).then(function(data){
+      renderAccount(data.user);
+      $("login-form").reset();
+      showAccountStatus("You are signed in.",true);
+      toast("Signed in");
+    }).catch(function(error){status.textContent=error.message;}).finally(function(){submit.disabled=false;});
+  });
+  $("show-login").onclick=function(){$("signup-form").hidden=true;$("login-form").hidden=false;$("account-dialog-title").textContent="Sign in";$("login-status").textContent="";$("login-email").focus();};
+  $("show-signup").onclick=function(){$("login-form").hidden=true;$("signup-form").hidden=false;$("account-dialog-title").textContent="Create your account";$("signup-status").textContent="";$("signup-name").focus();};
+  $("signupbtn").onclick=function(){
+    $("signup").showModal();
+    if(currentUser){$("account-edit-button").focus();}
+    else if(!$("login-form").hidden){$("login-email").focus();}
+    else{$("signup-name").focus();}
+  };
+  $("account-close").onclick=function(){$("signup").close()};
+  $("signup").onclick=function(event){if(event.target===$("signup"))$("signup").close()};
+  $("account-edit-button").onclick=function(){
+    $("account-view").hidden=true;
+    $("account-edit").hidden=false;
+    showAccountStatus("");
+    $("account-current-password").focus();
+  };
+  $("account-cancel").onclick=function(){
+    $("account-edit").reset();
+    $("account-edit").hidden=true;
+    $("account-view").hidden=false;
+    renderAccount(currentUser);
+  };
+  $("account-edit").addEventListener("submit",function(event){
+    event.preventDefault();
+    var newPassword=$("account-new-password").value;
+    var submit=$("account-edit").querySelector("button[type=submit]");
+    submit.disabled=true;
+    api("/api/auth/profile","PATCH",{
+      name:$("account-edit-name").value.trim(),
+      email:$("account-edit-email").value.trim(),
+      current_password:$("account-current-password").value,
+      new_password:newPassword
+    }).then(function(data){
+      renderAccount(data.user);
+      $("account-current-password").value="";
+      $("account-new-password").value="";
+      $("account-edit").hidden=true;
+      $("account-view").hidden=false;
+      showAccountStatus("Your account changes have been saved.",true);
+      toast("Account updated");
+    }).catch(function(error){showAccountStatus(error.message,false);}).finally(function(){submit.disabled=false;});
+  });
+  $("account-logout").onclick=function(){
+    api("/api/auth/logout","POST",{}).then(function(){
+      currentUser=null;
+      renderAccount(null);
+      $("signup-form").hidden=true;
+      $("login-form").hidden=false;
+      $("account-dialog-title").textContent="Sign in";
+      showAccountStatus("You have signed out.",true);
+      toast("Signed out");
+    }).catch(function(error){showAccountStatus(error.message,false);});
+  };
+  api("/api/auth/me","GET").then(function(data){renderAccount(data.user);}).catch(function(error){
+    if(error.message!=="You are not signed in."){
+      $("signup-status").textContent="Account service unavailable. Please try again later.";
+    }
+  });
+
+  var TYPES=["Poetry","Short story","Essay","Song lyrics"],MOODS=["Any","Hopeful","Sad","Romantic","Funny","Calm","Dark"];
+  var type=TYPES[0],mood="Any";
+  function chips(host,arr,get,set){arr.forEach(function(t,i){
+    var b=document.createElement("button");b.type="button";b.className="chip";b.textContent=t;b.setAttribute("aria-pressed",i===0?"true":"false");
+    b.onclick=function(){set(t);Array.prototype.forEach.call(host.children,function(c){c.setAttribute("aria-pressed","false")});b.setAttribute("aria-pressed","true")};
+    host.appendChild(b)})}
+  chips($("types"),TYPES,0,function(t){type=t==="Poetry"?"Poem":t;setGo()});
+  var mode="ideas";
+  chips($("modes"),["Headlines and topics","Write a starter draft","Poem & story writer"],0,function(t){
+    mode=t==="Poem & story writer"?"ai":(t.indexOf("Write")===0?"write":"ideas");
+    var w=mode==="write",ai=mode==="ai";
+    $("titlebox").hidden=!(w||ai);$("lenbox").hidden=!(w||ai);$("ai-write").hidden=!ai;
+    $("go").hidden=ai;$("surprise-wrap").hidden=ai;
+    Array.prototype.forEach.call($("types").children,function(b){
+      b.hidden=ai&&b.textContent!=="Poetry"&&b.textContent!=="Short story";
+    });
+    if(ai&&type!=="Poem"&&type!=="Short story"){
+      type="Poem";
+      Array.prototype.forEach.call($("types").children,function(b){b.setAttribute("aria-pressed",b.textContent==="Poetry"?"true":"false")});
+    }
+    setGo();$("err").textContent="";$("ai-status").textContent="";
+    $("out").hidden=mode!=="ideas"||$("heads").childNodes.length===0;
+    $("piece").hidden=!w||$("pbody").textContent==="";
+  });
+
+  var H={
+    Hopeful:["The Morning After {w}","Where {w} Begins Again","A Light Called {w}","What {w} Taught the Sun","Still Rising, Still {w}","One More Day of {w}"],
+    Sad:["The Silence of {w}","What {w} Left Behind","Letters to {w}","When {w} Went Quiet","The Last Page of {w}","Empty Chairs and {w}"],
+    Romantic:["If {w} Could Hold My Hand","Your Name Is Written in {w}","{w} and Two Cups of Chai","Come Back to {w}","The Way {w} Looks at You","Love, Written in {w}"],
+    Funny:["My Complicated Relationship with {w}","{w}: A Disaster in Three Acts","Why {w} Never Texts Back","I Blame {w}","The Great {w} Misunderstanding","Breaking News: {w} Strikes Again"],
+    Calm:["Slow Hours of {w}","A Quiet Afternoon with {w}","Breathing in {w}","The Soft Edge of {w}","Sitting Beside {w}","Everything Settles Around {w}"],
+    Dark:["The Shadow Inside {w}","What {w} Never Told Us","Midnight Belongs to {w}","The Locked Door of {w}","Ashes of {w}","Beneath the Floor of {w}"]
+  };
+  var T={
+    Hopeful:["Write about {w} at the moment things begin to turn better.","Tell {w} from the view of someone who refuses to give up.","Link {w} to a small, ordinary kindness.","Imagine {w} ten years from now, and what changed.","Let {w} be the last thing that goes wrong before it goes right."],
+    Sad:["Write about {w} as something you can no longer reach.","Focus on one object that holds the memory of {w}.","Describe {w} through what is missing from the room.","Speak to {w} as if it could still hear you.","Show {w} through a single quiet, ordinary day."],
+    Romantic:["Describe {w} through the eyes of someone secretly in love.","Write {w} as a letter that is never sent.","Tell how {w} brought two strangers together.","Let {w} be the place where a promise was made.","Show love through small habits connected to {w}."],
+    Funny:["Exaggerate {w} until it becomes absurd.","Write {w} as a complaint to the universe.","Give {w} a personality and let it argue with you.","Tell the worst possible plan involving {w}.","Describe {w} the way a very serious news reporter would."],
+    Calm:["Describe {w} using only what you can see, hear and smell.","Write {w} as a slow walk with no destination.","Let {w} be a pause between two busy days.","Find one detail of {w} that most people miss.","Write {w} as a breath in and a breath out."],
+    Dark:["Show {w} as something that looks safe but isn’t.","Tell {w} from the viewpoint of a witness who stayed silent.","Let {w} hide a secret the narrator slowly reveals.","Describe {w} at night, when everything changes.","Write {w} as a warning that nobody listened to."]
+  };
+  var O={
+    Hopeful:["Somewhere inside {w}, a window was already opening.","They said {w} was the end, but I could smell morning.","Today, {w} feels a little lighter."],
+    Sad:["I still set a place for {w}, though no one comes.","Nothing prepared me for how quiet {w} would be.","The last time I saw {w}, I didn’t know it was the last."],
+    Romantic:["I never believed in {w} until you walked in.","If {w} had a voice, it would say your name.","Every road I take somehow leads back to {w} and you."],
+    Funny:["Let me begin by saying {w} was absolutely not my fault.","Nobody warned me that {w} would be this dramatic.","It all started when I trusted {w}. Big mistake."],
+    Calm:["The evening folds itself around {w}, and nothing needs to happen.","Listen. Even {w} has stopped to rest.","Soft light, slow tea, and {w} beside the window."],
+    Dark:["Nobody talks about {w} after midnight.","The first thing I noticed about {w} was the silence.","Some doors close behind you. {w} was one of them."]
+  };
+  var S={
+    "Poem":["Pick one feeling and write it in a single sentence. Everything in the poem should serve that sentence.","Choose three images you can see or touch (not abstract words like “sadness”). Use them instead of explaining.","Write your first draft without stopping or fixing anything. Aim for 8 to 12 lines.","Decide a shape: rhyming couplets, free verse, or a short ghazal-style refrain. Stay with it.","Read it aloud and cut every word that does not carry the feeling.","End with a turn: a small surprise, an echo of the first line, or a quiet open question."],
+    "Short story":["Start with one character who wants something specific and cannot easily get it.","Pick a place and a time, and name three small details only someone there would notice.","Begin in the middle of a moment, not with background. Explain later, if at all.","Build in three steps: something goes wrong, it gets worse, then the character must choose.","Use dialogue to show feelings instead of describing them.","End on an image or a decision. A good ending changes something, even if it is small."],
+    "Essay":["Write your main point in one sentence. If you cannot, keep thinking before you write.","Open with a real moment, a question, or a surprising fact, not a definition.","Give each paragraph one idea and one example from your own life or what you have seen.","Mention the opposite view once, and answer it honestly.","Keep sentences short where the idea is hard.","Close by returning to your opening moment and showing what changed."],
+    "Song lyrics":["Pick a feeling and the one line you would want people to remember. That becomes the chorus.","Write the chorus first: short, simple, easy to sing, repeated.","Write verse one as the situation and verse two as what changed or got worse.","Keep a steady beat: count syllables and read each line out loud to a tapping rhythm.","Add a bridge: a different angle or a twist before the last chorus.","Sing it to yourself and replace any line that is hard to say."]
+  };
+  var R=["a letter that arrives twenty years late","the last bus home","a grandmother’s kitchen","the first rain","a locked diary","a stranger on the train","a childhood friend you lost touch with","a small town at midnight","an unfinished painting","the smell of old books","a lighthouse keeper","an empty school after the bell","a promise made on a rooftop","the sound of a distant wedding","a refugee’s suitcase","a mirror that remembers","chai at 4 a.m.","a river that changed its path","a phone that never rings","the day the power went out"];
+  var STOP=",a,an,the,of,and,or,to,in,on,at,for,is,are,was,were,i,my,me,we,you,your,it,its,about,with,that,this,about,write,story,poem,song,";
+  var F={
+    "Poem":["{o}\n[Add one thing you can see in {w}.]\n[Add one sound or smell.]\n[Say what it made you feel, in plain words.]","[Stanza 2: a memory of {w}. Name a place and a time.]\n[One line with a comparison nobody has used before.]","[Stanza 3: what changed? Show it with an object, not a feeling.]","[Stanza 4: speak directly to someone, or to {w}.]","[Stanza 5: the question you cannot answer.]","[Stanza 6: the smallest hopeful or painful detail.]","[Stanza 7: echo your first line with one word changed.]","[Last lines: end on an image, not an explanation.]"],
+    "Short story":["{o}\n[Who is the character, and what do they want about {w}?]","[Where and when? Add three small details only someone there would notice.]","[What goes wrong?]","[It gets worse. What does the character try that fails?]","[A conversation: show the feeling through what they say and do not say.]","[The choice the character must make.]","[The moment after the choice.]","[Last image: what has changed, even a little?]"],
+    "Essay":["{o}\n[Your main point about {w} in one sentence.]","[A real moment from your life connected to {w}.]","[First reason, with one example.]","[Second reason, with one example.]","[The opposite view, and your honest answer to it.]","[What most people miss about {w}.]","[What you would like the reader to do or think.]","[Return to your opening moment and show what changed.]"],
+    "Song lyrics":["{o}\n[Verse 1: the situation. Where are you, and what is happening with {w}?]","[Chorus: one simple line people will remember, repeated twice.]","[Verse 2: what changed or got worse.]","[Chorus again, with one word changed.]","[Bridge: a new angle or a twist.]","[Verse 3: the answer or the question left open.]","[Final chorus, slower.]","[Outro: the last line you would hum.]"]
+  };
+  var last={};
+
+  function pick(a,n){var c=a.slice(),o=[];while(o.length<n&&c.length){o.push(c.splice(Math.floor(Math.random()*c.length),1)[0])}return o}
+  function keyword(s){
+    var w=s.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu," ").split(/\s+/).filter(function(x){return x&&STOP.indexOf(","+x+",")<0});
+    if(!w.length)return null;var k=w.slice(0,2).join(" ");return k.charAt(0).toUpperCase()+k.slice(1);
+  }
+  function toast(m){var t=$("toast");t.textContent=m||"Copied";t.classList.add("on");setTimeout(function(){t.classList.remove("on")},1300)}
+  function copy(txt){try{navigator.clipboard.writeText(txt).then(function(){toast()},function(){})}catch(e){}}
+  function item(host,main,sub){
+    var b=document.createElement("button");b.type="button";b.className="item";
+    var m=document.createElement("b");m.textContent=main;b.appendChild(m);
+    if(sub){var s=document.createElement("span");s.textContent=sub;b.appendChild(s)}
+    b.style.animationDelay=host.children.length*60+"ms";b.onclick=function(){copy(main)};host.appendChild(b);
+  }
+  function pool(map){
+    var mood=$("tone").value;if(mood!=="Any")return map[mood];
+    var all=[];Object.keys(map).forEach(function(k){all=all.concat(map[k])});return all;
+  }
+  function fill(s,w){return s.replace(/\{w\}/g,w)}
+
+  function render(w){
+    ["heads","topics","steps","opens"].forEach(function(i){$(i).textContent=""});
+    pick(pool(H),6).forEach(function(h){item($("heads"),fill(h,w))});
+    pick(pool(T),5).forEach(function(t){item($("topics"),fill(t,w.toLowerCase()))});
+    S[type].forEach(function(s){var li=document.createElement("li");li.textContent=s;$("steps").appendChild(li)});
+    $("sh").textContent="How to write your "+type.toLowerCase();
+    pick(pool(O),3).forEach(function(o){item($("opens"),fill(o,w.toLowerCase()))});
+    $("piece").hidden=true;$("out").hidden=false;$("out").scrollIntoView({behavior:"smooth"});
+  }
+  function writeIt(){
+    var idea=$("idea").value.trim(),ttl=$("ttl").value.trim();$("err").textContent="";
+    if(idea.length<3&&ttl.length<3){$("err").textContent="Give a heading or a few words about your topic.";return}
+    var w=keyword(idea||ttl)||"This Feeling",lw=w.toLowerCase();last.w=w;
+    var n={Short:4,Medium:6,Long:8}[$("len").value],o=fill(pick(pool(O),1)[0],lw);
+    $("ptitle").textContent=ttl||fill(pick(pool(H),1)[0],w);
+    $("pbody").textContent=F[type].slice(0,n).map(function(x){return fill(x.replace("{o}",o),lw)}).join("\n\n");
+    $("piece").querySelector(".hint").textContent="A starter draft: replace the [brackets] with your own words.";
+    $("piece").hidden=false;$("out").hidden=true;$("piece").scrollIntoView({behavior:"smooth"});
+  }
+  function localIdeaDraft(idea,kind,tone,length){
+    var subject=idea.replace(/\s+/g," ").replace(/[.!?]+$/,"");
+    var close={
+      Hopeful:"and somewhere in that small beginning, the light returned.",
+      Sad:"and the quiet kept the shape of everything that was gone.",
+      Romantic:"and every ordinary thing began to carry your name.",
+      Funny:"which was not the plan, but somehow became the best part.",
+      Calm:"while the whole world seemed content to move slowly.",
+      Dark:"though the shadows kept one last answer to themselves.",
+      Any:"and the moment held more meaning than it first let on."
+    }[$("tone").value]||"and the moment held more meaning than it first let on.";
+    var count={Short:2,Medium:3,Long:4}[$("len").value]||3;
+    if(kind==="Poem"){
+      var stanzas=[
+        ["The thought of "+subject+" settles into the day,","a small light resting on the window;","the room grows still enough to hear","what the hurried hours could not say."],
+        ["Outside, the ordinary street goes on,","one open door, one passing face;","I hold this feeling without a name","and give it time, and give it space."],
+        ["Nothing changes all at once;","no sky makes promises above.","Still, I keep this thought with me,","and let it teach my hands to love."],
+        ["So when the evening gathers near,","I leave one lamp against the blue;","somewhere between the dark and dawn,","a little hope comes into view."]
+      ];
+      return stanzas.slice(0,count).map(function(lines){return lines.join("\n")}).join("\n\n");
+    }
+    var paragraphs=[
+      "By the time evening arrived, the thought of "+subject+" had followed Mira through the whole day. She stopped beside the old bus shelter and tried to decide whether it was only a passing idea or something asking her to act.",
+      "A folded note slipped from her coat pocket. It held no answer, just a few words she had written to herself weeks ago. Reading them again, she noticed the detail she had been avoiding: waiting had become its own kind of choice.",
+      "Mira took a breath, tucked the note away, and made one small decision. It did not solve everything, but it gave the next day somewhere to begin, "+close,
+      "Years later, she would not remember every detail of that evening. She would remember the shelter, the paper warming in her hand, and how a quiet choice changed the direction of her life."
+    ];
+    return paragraphs.slice(0,count).join("\n\n");
+  }
+  function showGeneratedDraft(text,idea,source){
+    $("ptitle").textContent=$("ttl").value.trim()||type+" inspired by "+idea.slice(0,60);
+    $("pbody").textContent=text;
+    $("piece").querySelector(".hint").textContent=source==="local"
+      ?"Instant local starter draft. For AI-generated writing, open Qalam through its backend and configure KALAM_AI_API_KEY."
+      :"AI-generated draft. Review and personalize it before sharing.";
+    $("piece").hidden=false;$("out").hidden=true;
+    $("piece").scrollIntoView({behavior:"smooth"});
+  }
+  function writeWithAI(){
+    var idea=$("idea").value.trim();
+    var status=$("ai-status"),button=$("ai-write");
+    status.textContent="";
+    if(idea.length<3){status.textContent="Add a few words about your idea first."; $("idea").focus();return}
+    button.disabled=true;
+    button.textContent="Writing your "+type.toLowerCase()+"…";
+    status.textContent="Creating a complete draft. This can take a few seconds.";
+    fetch("/api/generate",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({idea:idea,type:type,tone:$("tone").value,length:$("len").value})
+    }).then(function(response){
+      return response.text().then(function(body){
+        var data;
+        try{data=JSON.parse(body)}catch(e){
+          if(!response.ok)throw new Error("The writing request was blocked (HTTP "+response.status+"). Open Qalam through its backend server, not a static preview.");
+          throw new Error("The writing service returned an invalid response. Check that Qalam's backend is running.");
+        }
+        if(!response.ok)throw new Error(data.error||"The writing service could not create a draft (HTTP "+response.status+").");
+        if(!data || typeof data.text!=="string" || !data.text.trim())throw new Error("The writing service returned an empty draft.");
+        return {text:data.text.trim(),source:data.source};
+      });
+    }).then(function(result){
+      showGeneratedDraft(result.text,idea,result.source);
+      status.textContent=result.source==="local"
+        ?"Your starter draft is ready. Configure the server AI key for AI-generated writing."
+        :"Your complete draft is ready.";
+    }).catch(function(error){
+      var recoverable=error.name==="TypeError"||/HTTP (403|502|503)|Failed to fetch|NetworkError|blocked/i.test(error.message||"");
+      if(recoverable){
+        showGeneratedDraft(localIdeaDraft(idea,type,$("tone").value,$("len").value),idea,"local");
+        status.textContent="The AI service is unavailable here, so a local starter draft was created from your idea.";
+      }else{
+        status.textContent=error.message||"Could not create a draft. Please check your idea and try again.";
+      }
+    }).finally(function(){
+      button.disabled=false;
+      setGo();
+    });
+  }
+  function run(){
+    if(mode==="write")return writeIt();
+    var idea=$("idea").value.trim();$("err").textContent="";
+    if(idea.length<3){$("err").textContent="Write a few words about your idea first, or tap “Surprise me”.";return}
+    last.w=keyword(idea)||"This Feeling";render(last.w);
+  }
+  $("go").onclick=run;
+  $("ai-write").onclick=writeWithAI;
+  $("pcopy").onclick=function(){copy($("ptitle").textContent+"\n\n"+$("pbody").textContent)};
+  $("pagain").onclick=function(){if(mode==="ai")writeWithAI();else writeIt()};
+  $("more").onclick=function(){render(last.w||"This Feeling")};
+  $("rnd").onclick=function(){$("idea").value=R[Math.floor(Math.random()*R.length)];run()};
+
+  var ST={lang:"en",fs:16,font:"sans",theme:"auto",anim:"on"};
+  try{Object.assign(ST,JSON.parse(localStorage.getItem("kalam_set")||"{}"))}catch(e){}
+  var HI={kicker:"कवियों और कहानीकारों के लिए",lede:"समझ नहीं आ रहा कि क्या लिखें या शुरुआत कैसे करें? लेखन के विचार और मार्गदर्शिका पाएँ, या Poem & Story Writer से अपने विचारों पर आधारित ड्राफ्ट बनाएँ।",ml:"आपको क्या चाहिए?",tl:"आप क्या लिख रहे हैं?",h_heads:"शीर्षक",h_topics:"विषय और नज़रिए",h_opens:"शुरू करने के तरीके",h_share:"अपनी रचना साझा करें",h_op:"आपकी राय",b_post:"कमेंट भेजें",b_share:"साझा करें",menu:"मेनू",s_lang:"भाषा",s_size:"अक्षर का आकार",s_font:"फ़ॉन्ट",s_theme:"थीम",s_anim:"एनिमेशन",s_go:"यहाँ जाएँ",g_write:"लिखें",g_share:"रचनाएँ साझा करें",g_op:"राय",ai_write:"AI से पूरी रचना लिखवाएँ"};
+  function setGo(){
+    var hi=ST.lang==="hi",w=mode==="write";
+    $("go").textContent=hi?(w?"ड्राफ्ट लिखिए":"आइडिया दीजिए"):(w?"Write a starter draft":"Give me ideas");
+    $("ai-write").textContent=type==="Short story"?"Write a short story from my idea":"Write poetry from my idea";
+  }
+  function apply(){
+    var h=document.documentElement;h.lang=ST.lang;h.style.setProperty("--fs",ST.fs+"px");
+    h.style.setProperty("--body",ST.font==="serif"?"Fraunces,Georgia,serif":'"DM Sans",system-ui,sans-serif');
+    if(ST.theme==="auto")h.removeAttribute("data-theme");else h.setAttribute("data-theme",ST.theme);
+    document.body.classList.toggle("noanim",ST.anim==="off");
+    Array.prototype.forEach.call(document.querySelectorAll("[data-i]"),function(e){if(!e.dataset.en)e.dataset.en=e.textContent;e.textContent=(ST.lang==="hi"&&HI[e.dataset.i])||e.dataset.en});
+    setGo();try{localStorage.setItem("kalam_set",JSON.stringify(ST))}catch(e){}
+  }
+  function seg(id,opts,key){
+    var h=$(id);
+    function paint(){Array.prototype.forEach.call(h.children,function(b){b.setAttribute("aria-pressed",String(b.dataset.v)===String(ST[key])?"true":"false")})}
+    opts.forEach(function(o){var b=document.createElement("button");b.type="button";b.className="chip";b.textContent=o[1];b.dataset.v=o[0];b.onclick=function(){ST[key]=o[0];apply();paint()};h.appendChild(b)});
+    paint();
+  }
+  seg("m_lang",[["en","English"],["hi","हिन्दी"]],"lang");
+  seg("m_size",[[14,"Small"],[16,"Normal"],[19,"Large"],[22,"Extra large"]],"fs");
+  seg("m_font",[["sans","Simple"],["serif","Serif"]],"font");
+  seg("m_theme",[["auto","Auto"],["light","Light"],["dark","Dark"]],"theme");
+  seg("m_anim",[["on","On"],["off","Off"]],"anim");
+  $("menubtn").onclick=function(){var p=$("panel");p.hidden=!p.hidden;this.setAttribute("aria-expanded",String(!p.hidden))};
+  Array.prototype.forEach.call($("panel").querySelectorAll("a"),function(a){
+    a.onclick=function(event){
+      $("panel").hidden=true;$("menubtn").setAttribute("aria-expanded","false");
+      if(a.getAttribute("href")==="#signup"){
+        event.preventDefault();
+        $("signup").showModal();
+        if(currentUser)$("account-edit-button").focus();
+        else if(!$("login-form").hidden)$("login-email").focus();
+        else $("signup-name").focus();
+      }
+    };
+  });
+  apply();
+
+  // Shared writings: saved on this device only.
+  var PK="kalam_posts",posts=[],stype="Poem";
+  try{posts=JSON.parse(localStorage.getItem(PK)||"[]")}catch(e){posts=[]}
+  var SEED=[
+    {k:"Poem",t:"Before the Rain",n:"Qalam sample",x:"The sky clears its throat,\nthe street holds its breath,\nand somewhere a window\nremembers your name."},
+    {k:"Shayari",t:"ख़ामोशी",n:"Qalam sample",x:"ख़ामोशी भी बहुत कुछ कहती है,\nबस सुनने वाला दिल चाहिए।"},
+    {k:"Story",t:"The Last Bus",n:"Qalam sample",x:"The last bus left at nine. Meera stood at the stop anyway, holding a ticket for a journey she had already decided not to take."}
+  ];
+  chips($("stypes"),["Poem","Story","Shayari","Other"],0,function(t){stype=t});
+  function save(){try{localStorage.setItem(PK,JSON.stringify(posts))}catch(e){}}
+  function showP(){
+    var h=$("slist");h.textContent="";
+    var all=posts.map(function(x,i){return{x:x,i:i}}).reverse().concat(SEED.map(function(x){return{x:x,i:-1}}));
+    all.forEach(function(r){
+      var d=document.createElement("div");d.className="cmi";
+      var s=document.createElement("small");s.textContent=r.x.k+" · "+(r.x.n||"A reader");
+      var b=document.createElement("b");b.textContent=r.x.t||"Untitled";
+      var p=document.createElement("p");p.textContent=r.x.x;
+      var a=document.createElement("div");a.className="acts";
+      var c=document.createElement("button");c.type="button";c.className="ghost";c.textContent="Copy";
+      c.onclick=function(){copy((r.x.t?r.x.t+"\n\n":"")+r.x.x+(r.x.n&&r.x.n!=="Qalam sample"?"\n\n— "+r.x.n:""))};
+      a.appendChild(c);
+      if(r.i>=0){var x=document.createElement("button");x.type="button";x.className="ghost";x.textContent="Delete";x.onclick=function(){posts.splice(r.i,1);save();showP()};a.appendChild(x)}
+      d.appendChild(s);d.appendChild(b);d.appendChild(p);d.appendChild(a);h.appendChild(d);
+    });
+  }
+  showP();
+  $("spost").onclick=function(){
+    var v=$("stxt").value.trim();$("serr").textContent="";
+    if(v.length<10){$("serr").textContent="Write or paste at least a couple of lines first.";return}
+    posts.push({k:stype,t:$("sttl").value.trim(),n:$("snm").value.trim(),x:v});save();
+    $("stxt").value="";$("sttl").value="";showP();toast("Shared");
+  };
+  $("spaste").onclick=function(){
+    try{navigator.clipboard.readText().then(function(t){var e=$("stxt");e.value=(e.value?e.value+"\n":"")+t;e.value=e.value.slice(0,3000)},function(){toast("Long-press the box and choose Paste")})}
+    catch(e){toast("Long-press the box and choose Paste")}
+  };
+
+  // Comments: saved on this device. If FEEDBACK_URL is set, a link to send opinions to the site owner is shown.
+  var KEY="kalam_comments",list=[];
+  try{list=JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){list=[]}
+  function showC(){
+    var h=$("cmlist");h.textContent="";
+    list.slice().reverse().forEach(function(c){
+      var d=document.createElement("div");d.className="cmi";
+      var s=document.createElement("small");s.textContent=c.d;var p=document.createElement("p");p.textContent=c.t;
+      d.appendChild(s);d.appendChild(p);h.appendChild(d);
+    });
+  }
+  showC();
+  if(FEEDBACK_URL){var a=document.createElement("a");a.href=FEEDBACK_URL;a.textContent="Send your opinion to the Qalam team";a.style.cssText="display:inline-block;margin-top:.8rem;color:var(--accent)";$("cmgo").after(a)}
+  $("cmgo").onclick=function(){
+    var v=$("cmt").value.trim();$("cmerr").textContent="";
+    if(v.length<2){$("cmerr").textContent="Write a few words first.";return}
+    list.push({t:v,d:new Date().toLocaleDateString()});
+    try{localStorage.setItem(KEY,JSON.stringify(list))}catch(e){}
+    $("cmt").value="";showC();toast("Comment posted");
+  };
+})();
+</script>
+</body>
+</html>
